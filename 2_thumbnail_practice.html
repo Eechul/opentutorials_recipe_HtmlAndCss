@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.thumbnail {
+				margin: 20px;
+				width: 150px;
+				height: 150px;
+				border: 2px solid blue;
+				display: inline-block;
+				background-size: cover;
+				background-position: center center;
+			}
+			.thumbnail.circle {
+				border-radius: 100%;
+			}
+			.thumbnail.round {
+				border-radius: 20%;
+				border: 2px dotted red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="thumbnail circle" style="background-image:url('image/Desert.jpg')"></div>
+
+		<div class="thumbnail round" style="background-image:url('image/Desert.jpg')"></div>
+	</body>
+</html>
