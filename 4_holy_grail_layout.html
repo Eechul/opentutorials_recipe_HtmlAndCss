@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            border: 5px solid black;
+        }
+        .container > * {
+            border: 5px solid red;
+        }
+        .container > .content > * {
+            border: 5px solid green;
+        }
+        .container .content {
+            padding-left:200px;
+            padding-right: 150px;
+            overflow: hidden;
+        }
+        .container .content > * {
+            float:left;
+            padding-bottom: 2500px;
+            margin-bottom: -2500px;
+        }
+        .container .content main {
+            width: 100%;
+        }
+        .container .content nav {
+            width: 200px;
+            margin-left: -100%;
+            left: -200px;
+            position: relative;
+        }
+        .container .content aside {
+            width: 150px;
+            margin-right: -150px;
+        }
+        .container footer {
+            clear: both;
+        }
+        @media (max-width:599px) {
+             .container .content {
+                padding-left:0;
+                padding-right: 0;
+                overflow: visible;
+            }
+            .container .content > * {
+                float:none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            
+            .container .content main {
+                width: 100%;
+            }
+            .container .content nav {
+                width: auto;
+                margin-left: 0;
+                left: 0;
+                position: relative;
+            }
+            .container .content aside {
+                width: auto;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        
+        <section class="content">
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatum quaerat cumque cupiditate voluptate est, beatae. Libero architecto necessitatibus earum laborum dolores eum cupiditate aliquid doloribus inventore delectus provident autem quasi temporibus eligendi odit aut voluptates quam, eius doloremque odio impedit pariatur, cum. Aspernatur iste iusto nulla vero vel, non odio sequi in fugiat, dignissimos facere, impedit voluptatibus eum esse? Provident ducimus eaque, quae iure perspiciatis consectetur rerum ullam, aut reprehenderit fuga dolorem quia quasi, temporibus quos sint ab! Facilis nemo dolorum quos nihil, necessitatibus soluta blanditiis, molestias dicta assumenda omnis! Repudiandae temporibus similique quia accusamus aperiam pariatur repellat iste?
+                derit fuga dolorem quia quasi, temporibus quos sint ab! Facilis nemo dolorum quos nihil, necessitatibus soluta blanditiis, molestias dicta assumenda omnis! Repudiandae temporibus similique quia accusamus aperiam pariatur repellat iste?
+                derit fuga dolorem quia quasi, temporibus quos sint ab! Facilis nemo dolorum quos nihil, necessitatibus soluta blanditiis, molestias dicta assumenda omnis! Repudiandae temporibus similique quia accusamus aperiam pariatur repellat iste?
+                derit fuga dolorem quia quasi, temporibus quos sint ab! Facilis nemo dolorum quos nihil, necessitatibus soluta blanditiis, molestias dicta assumenda omnis! Repudiandae temporibus similique quia accusamus aperiam pariatur repellat iste?
+                derit fuga dolorem quia quasi, temporibus quos sint ab! Facilis nemo dolorum quos nihil, necessitatibus soluta blanditiis, molestias dicta assumenda omnis! Repudiandae temporibus similique quia accusamus aperiam pariatur repellat iste?
+                
+            </main>
+            <nav>
+                <ul>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                </ul>
+            </nav>
+            <aside>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quos quis nam veniam similique alias neque sunt distinctio cupiditate sit.
+            </aside>
+        </section>
+        
+        <footer>
+            <a href="http://www.naver.com">FOOTER</a>
+        </footer>
+    </div>
+</body>
+</html>
