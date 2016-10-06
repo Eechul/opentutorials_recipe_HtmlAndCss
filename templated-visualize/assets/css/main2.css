@@ -1,0 +1,69 @@
+#wrapper {
+    border: 5px solid red;
+}
+
+#wrapper>* {
+    border: 5px solid green;
+}
+
+#wrapper>*>* {
+    border: 5px solid blue;
+}
+
+body {
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+    font-family: "Source Sans Pro", sans-serif;
+}
+#header h1, #header h1 strong {
+    font-weight: 200;
+}
+#header .avatar {
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* r: 레드 g: 그린 b: 블루  a: 투명도   
+        a: 투명도 만 잘 조절해도 이쁜웹사이트를 만들수 있다.*/
+}
+
+#header .avatar img {
+    border-radius: 100%;
+    display: block;
+}
+
+#header h1 {
+    font-size: 1.25em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#header h1 strong {
+    color: white;
+}
+
+#header h1 a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+    /* 장식(데코레이션)을 없에고 바텀 스타일을 지정해준다*/
+}
+
+#header ul.icons li {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul.icons li a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+#header ul.icons li .label {
+    display: none;
+}
