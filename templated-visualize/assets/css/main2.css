@@ -7,7 +7,7 @@
 }
 
 #wrapper>*>* {
-    border: 5px solid blue;
+/*    border: 5px solid blue;*/
 }
 
 body {
@@ -15,9 +15,17 @@ body {
     background-size: cover;
     font-family: "Source Sans Pro", sans-serif;
 }
+
+#header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 #header h1, #header h1 strong {
     font-weight: 200;
 }
+
 #header .avatar {
     border-radius: 100%;
     display: inline-block;
@@ -26,6 +34,8 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.25);
     /* r: 레드 g: 그린 b: 블루  a: 투명도   
         a: 투명도 만 잘 조절해도 이쁜웹사이트를 만들수 있다.*/
+    margin-bottom: 1.5rem;
+    
 }
 
 #header .avatar img {
@@ -36,6 +46,7 @@ body {
 #header h1 {
     font-size: 1.25em;
     color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1.5rem;
 }
 
 #header h1 strong {
@@ -59,6 +70,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
 }
 #header ul.icons li a {
     color: rgba(255, 255, 255, 0.4);
@@ -66,4 +78,35 @@ body {
 }
 #header ul.icons li .label {
     display: none;
+}
+#main .thumbnails {
+    display: flex;
+}
+#main .thumbnails > div {
+    flex-grow: 1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#main .thumbnails a {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+#main .thumbnails img{
+    width:100%;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    display: block;
+}
+#main .thumbnails h3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    padding: 0.7rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 0.1rem;
 }
